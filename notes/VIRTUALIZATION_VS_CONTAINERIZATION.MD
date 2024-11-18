@@ -2,6 +2,8 @@
 
 Virtualization and containerization are both methods of creating isolated environments for applications, but they differ significantly in how they achieve this isolation and in their use cases.
 
+![containerization vs virtualization](https://github.com/user-attachments/assets/7284f50c-5c0d-4117-940e-4c8014a4e5a8)
+
 ### Virtualization
 
 **Virtualization** involves creating multiple simulated environments or virtual machines (VMs) on a single physical hardware system using a hypervisor. Each VM runs its own operating system (OS) and applications, effectively mimicking a physical computer.
