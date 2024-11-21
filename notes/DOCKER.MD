@@ -7,6 +7,8 @@ Docker is a platform designed to help developers build, deploy, and manage appli
 
 Here are some core concepts:
 
+![docker registry](https://github.com/user-attachments/assets/a7d9e152-9872-4048-9772-7741ea0dfb32)
+
 1.  **Containers**: Containers are lightweight, stand-alone packages that include everything needed to run a piece of software, including the code, runtime, system tools, libraries, and settings. They are isolated from each other and the host machine, which makes them portable across environments.
 
 2.  **Docker Images**: A Docker image is a lightweight, standalone, executable package that includes the application code and its dependencies. It’s a read-only template used to create containers. You can think of it as a blueprint for running your application.
