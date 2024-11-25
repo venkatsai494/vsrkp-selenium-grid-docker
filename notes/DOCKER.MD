@@ -9,16 +9,17 @@ Here are some core concepts:
 
 ![docker registry](https://github.com/user-attachments/assets/a7d9e152-9872-4048-9772-7741ea0dfb32)
 
-1.  **Containers**: Containers are lightweight, stand-alone packages that include everything needed to run a piece of software, including the code, runtime, system tools, libraries, and settings. They are isolated from each other and the host machine, which makes them portable across environments.
+1.  **Containers**: Containers are lightweight, stand-alone packages that include everything needed to run a piece of software, including the code, runtime, system tools, libraries, and settings. They are isolated from each other and the host machine, which makes them portable across environments. This can be considered same as instance or objects in java.
 
-2.  **Docker Images**: A Docker image is a lightweight, standalone, executable package that includes the application code and its dependencies. It’s a read-only template used to create containers. You can think of it as a blueprint for running your application.
+2.  **Docker Images**: A Docker image is a lightweight, standalone, executable package that includes the application code and its dependencies. It’s a read-only template used to create containers. You can think of it as a blueprint for running your application. This can be considered as .class files in java which are compiled form .java files
 
 3.  **Docker Engine**: The Docker Engine is the core component that manages containers. It runs on the host OS, providing services for building, starting, and stopping containers.
 
-4.  **Dockerfile**: A Dockerfile is a text file with instructions on how to build a Docker image. You define the base image, install dependencies, add application code, and configure settings here.
+4.  **Dockerfile**: A Dockerfile is a text file with instructions on how to build a Docker image. You define the base image, install dependencies, add application code, and configure settings here. This file need not have any extension but sometimes `.dockerfile` or `.txt` is used for that. This can be considered as .java files in java where we have instructions written.
 
-5.  **Docker Hub**: Docker Hub is a cloud-based registry where you can find pre-built images shared by others or upload your own images for easy sharing and reuse.
+5.  **Docker Hub**: Docker Hub is a cloud-based registry where you can find pre-built images shared by others or upload your own images for easy sharing and reuse. It is similar to Maven
 
 
 Docker is widely used in DevOps, continuous integration/continuous deployment (CI/CD), and microservices architectures because it simplifies application deployment and ensures consistency across environments.
 
+Docker Commands Can be found here.
