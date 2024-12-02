@@ -22,4 +22,4 @@ Here are some core concepts:
 
 Docker is widely used in DevOps, continuous integration/continuous deployment (CI/CD), and microservices architectures because it simplifies application deployment and ensures consistency across environments.
 
-Docker Commands Can be found [here](/notes/DOCKER_COMMANDS.MD)
+Docker Commands Can be found [here](/notes/DOCKER_COMMANDS.MD). In order to run docker commands
