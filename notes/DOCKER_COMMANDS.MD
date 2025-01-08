@@ -1,5 +1,38 @@
 # Docker Commands
 
+In Docker, the `--help` option is used to display detailed information and usage instructions for a specific Docker command. It's a quick way to access a command's documentation directly from the terminal.
+
+### General Syntax
+
+```bash
+docker <command> --help
+```
+
+**Command-Specific Help**  
+    Provides detailed information about the options, flags, and usage of a specific Docker command.
+
+    `docker run --help` 
+ would return the below output
+    
+    Usage:  docker run [OPTIONS] I MAGE [COMMAND] [ARG...]
+    Run a command in a new container
+    
+    Options:
+      -d, --detach              Run container in background and print container ID
+      -e, --env list            Set environment variables
+      -i, --interactive         Keep STDIN open even if not attached
+      ...
+    
+
+
+### Benefits of `--help`
+
+*   **Discover available commands** and their options.
+*   **Learn about specific flags** and their functionality.
+*   **Troubleshoot command usage** errors by understanding proper syntax.
+
+Would you like to explore any specific Docker command in more detail?
+
 ### **1. Docker Installation and Version Info**
 | **Command**                       | **Description**                                 |
 |------------------------------------|-------------------------------------------------|
