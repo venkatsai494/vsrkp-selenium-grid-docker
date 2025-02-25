@@ -23,3 +23,30 @@ Here are some core concepts:
 Docker is widely used in DevOps, continuous integration/continuous deployment (CI/CD), and microservices architectures because it simplifies application deployment and ensures consistency across environments.
 
 Docker Commands Can be found [here](/notes/DOCKER_COMMANDS.MD). In order to run docker commands
+
+Docker namespace is used to create a unique name for the container. It is used to avoid conflicts with other containers. The namespace is optional and can be used with the `--name` flag. If not provided, Docker will generate a random name for the container.
+
+Docker names its containers using a combination of an **adjective** and a **famous scientist, mathematician, or hacker's last name**. This is done through the [`moby/moby`](https://github.com/moby/moby) project's `namegenerator` utility.
+
+For example, `boring_varahamihira` follows this pattern:
+
+*   **"boring"** → A randomly chosen adjective.
+*   **"varahamihira"** → The name of an Indian mathematician and astronomer (6th century AD).
+
+### How Docker Generates Names:
+
+1.  If a name is **not specified** when creating a container, Docker assigns one automatically.
+2.  Docker picks a **random adjective** from a predefined list.
+3.  It picks a **random scientist's last name** from another predefined list.
+4.  The two are combined with an **underscore** (`_`) in between.
+5.  If the combination is already taken, Docker retries until it finds a unique name.
+
+### How to Assign a Custom Name:
+
+You can override this default naming by using the `--name` flag when running a container:
+
+```sh
+docker run --name my_container alpine
+```
+
+Would you like to see the source code of how Docker generates these names?
