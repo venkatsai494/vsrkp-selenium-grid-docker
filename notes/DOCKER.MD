@@ -49,4 +49,10 @@ You can override this default naming by using the `--name` flag when running a c
 docker run --name my_container alpine
 ```
 
-Would you like to see the source code of how Docker generates these names?
+
+
+
+
+# Interesting points
+
+* Docker is genrally built to run only on Linux machine. So, when you run Docker on Windows, it's actually running inside a small Linux VM (either WSL or Hyper-V), even though you interact with it from Windows. This abstraction makes it look like Docker is running natively.
